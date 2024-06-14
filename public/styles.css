@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    cursor: url(images/heart.png), auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    all: unset;
+}
+
+.heading-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22%;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: #F49096;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+}
+
+.button-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+button {
+    all: unset;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+button:hover {
+    cursor: url(images/heartLarger.png), auto;
+    padding: 15px 20px;
+}
+
+.button-filled {
+    background-color: #F49096;
+    border: 3px solid #F49096;
+    color: #fff;
+    transition: 0.3s ease-out;
+}
+
+.button-outline {
+    border: 3px solid #F49096;
+    color: #F49096;
+    transition: 0.3s ease-out;
+}
+
+.button-filled:hover {
+    background-color: #fff;   
+    color: #F49096;
+}
+
+.button-outline:hover {
+    background-color: #F49096;
+    color: #fff;
+}
+
+
+.heart-container {
+    position: fixed;
+    right: 15%;
+    bottom: 0;
+  }
+  
+  .heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    will-change: transform, opacity, filter;
+    filter: blur(0px);
+  }
+  
+  .heart__svg {
+    overflow: visible !important;
+    width: 100%;
+    height: auto;
+  }
+  
+  .heart__path {
+    fill: #ff1100;
+  }
+  

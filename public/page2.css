@@ -1,0 +1,47 @@
+.split-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.split-container div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.split-left {
+    background-color: #F49096;
+}
+
+.split-left h2 {
+    color: #fff;
+    margin-top: 100px;
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+.split-left p {
+    color: #fff;
+    align-self: flex-start;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.split-right img {
+    width: 100%;
+    height: auto;
+}
+
+.button-filled-white {
+    border: 3px solid #fff;
+    background-color: #fff;
+    color: #F49096;
+    transition: 0.3s ease-out;
+}
+
+.button-filled-white:hover {
+    cursor: url(images/heartLarger.png), auto;
+    padding: 15px 20px;
+}
